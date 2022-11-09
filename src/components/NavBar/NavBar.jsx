@@ -27,9 +27,6 @@ function NavBar() {
                     <a href="." className="navLink">Hogar</a> 
                 </li>
                 <li className="navItem">
-                    <a href="." className="navLink">Kits</a> 
-                </li>
-                <li className="navItem">
                     <a href="." className="navLink">Refrigerados</a> 
                 </li>
             </ul>

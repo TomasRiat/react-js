@@ -1,8 +1,14 @@
 
-function Item() {
+function Item({title, imgurl, price}) {
     return (
-        <div>
-            
+        <div className="card">
+            <div className="card-img">
+                <img src= {imgurl} alt={title} />
+            </div>
+            <div>
+                <h3>{title}</h3>
+                <p>${price}</p>
+            </div>
         </div>
     )
 }
