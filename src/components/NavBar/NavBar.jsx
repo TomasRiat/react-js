@@ -1,33 +1,33 @@
 import CartWidget from "./CartWidget"
-
+import { Link } from "react-router-dom"
 function NavBar() {
     return (
         <div className="navContainer">
             <div className="navBar1">
-                <h1 className="title"> <a href=".">Dietetica Nunchi</a></h1>
+                <h1 className="title"> <Link to="/">Dietetica Nunchi</Link></h1>
                 <CartWidget/>
             </div>
             <ul className="navBar2">
                 <li className="navItem">
-                    <a href="." className="navLink">Alimentos Naturales</a> 
+                    <Link to="/category/alimentosNaturales" className="navLink">Alimentos Naturales</Link> 
                 </li>
                 <li className="navItem">
-                    <a href="." className="navLink">Despensa</a> 
+                    <Link to="/category/despensa" className="navLink">Despensa</Link> 
                 </li>
                 <li className="navItem">
-                    <a href="." className="navLink">Bebidas e Infusiones</a>
+                    <Link to="/category/bebidasEinfusiones" className="navLink">Bebidas e Infusiones</Link>
                 </li>
                 <li className="navItem">
-                    <a href="." className="navLink">Cosmética & Cuidado de la Salud</a> 
+                    <Link to="/category/cosmetica" className="navLink">Cosmética & Cuidado de la Salud</Link> 
                 </li>
                 <li className="navItem">
-                    <a href="." className="navLink">Suplementos Naturales</a> 
+                    <Link to="/category/suplementosNaturales" className="navLink">Suplementos Naturales</Link> 
                 </li>
                 <li className="navItem">
-                    <a href="." className="navLink">Hogar</a> 
+                    <Link to="/category/hogar" className="navLink">Hogar</Link> 
                 </li>
                 <li className="navItem">
-                    <a href="." className="navLink">Refrigerados</a> 
+                    <Link to="/category/refrigerados" className="navLink">Refrigerados</Link> 
                 </li>
             </ul>
 
