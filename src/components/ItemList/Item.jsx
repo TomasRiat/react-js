@@ -1,3 +1,4 @@
+import "./item.css";
 
 function Item({title, imgurl, price}) {
     return (
