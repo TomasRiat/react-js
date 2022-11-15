@@ -12,7 +12,7 @@ function getItems(idCategory){
             setTimeout(() => {
                 let itemRequested = products.filter((item) => item.category === idCategory);
                 resolve(itemRequested);
-            }, 2000);
+            }, 1000);
         }
     });
 }
@@ -24,7 +24,7 @@ export function getSingleItem(idParam){
         
         setTimeout(() => {
             resolve(itemRequested);
-        }, 2000);
+        }, 1000);
     });
 }
 

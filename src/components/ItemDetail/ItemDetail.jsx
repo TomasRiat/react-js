@@ -1,3 +1,5 @@
+import ButtonAddCart from "../Click/ButtonAddCart"
+import ItemCount from "../Click/ItemCount"
 import "./itemDetail.css"
 
 function ItemDetail({product}) {
@@ -8,8 +10,12 @@ function ItemDetail({product}) {
             </div>
             <div className="card-detail_detail">
                 <h2>{product.title}</h2>
-                <p>{product.description}</p>
                 <h3>${product.price}</h3>
+                <div className="card-interaction">
+                  <ItemCount stock= {product.stock} />
+                  <ButtonAddCart id= {product.id} />
+                </div>
+                <p>{product.description}</p>
             </div>
     </div>
   )
