@@ -19,8 +19,7 @@ function getItems(idCategory){
 
 export function getSingleItem(idParam){
     return new Promise((resolve, reject) => {
-        let itemRequested = products.find((item) => item.id === parseInt(idParam));
-
+        let itemRequested = products.find((item) => item.id === Number(idParam));
         if(itemRequested === undefined) reject("Item no encontrado")
         
         setTimeout(() => {

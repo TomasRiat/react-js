@@ -16,7 +16,7 @@ function App() {
           <Route path="/category/:idCategory" element={<ItemListContainer/>} />
           <Route path="/detail/:idItem" element={<ItemDetailContainer/>} />
 
-          <Route path="*" element={ <p>hacer pagina de error 404</p> } />
+          <Route path="*" element={<p>hacer pagina de error 404</p>} />
         </Routes>
 
         <footer> hacer item de footer</footer>

@@ -9,18 +9,11 @@ import { useParams } from "react-router-dom"
 function ItemDetailContainer() {
     
     const [product, setProduct] = useState([]);
-    const { id } = useParams();
+    const { idItem } = useParams();
 
-    
-    
     async function getItemsAsync(){
-        try {
-            let response = await getSingleItem(id);
+            let response = await getSingleItem(idItem);
             setProduct(response)
-        }
-        catch (errorMsg){
-            console.error(errorMsg)
-        }
     }
     useEffect(
         () => {
@@ -28,7 +21,6 @@ function ItemDetailContainer() {
         }, []);
 
     return <ItemDetail product={product}/>
-    
 }
 
 export default ItemDetailContainer

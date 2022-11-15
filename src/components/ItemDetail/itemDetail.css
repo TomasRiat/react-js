@@ -1,14 +1,16 @@
 .card-detail{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
-.card-detail_img{
+.card-detail_img img{
     width: 400px;
     height: 400px;
 }
 
 .card-detail_detail{
-    width: 200px;
-    height: 400px;
+    
 }

@@ -1,7 +1,16 @@
+:root{
+  --card-color:#B2C5B2;
+  --nav-color:#3C5148;
+  --backgroud-color:#D5DDDF;
+  --buton-color:#1B2727;
+  --title-color:#6B8E4E;
+}
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
 }
 
 li, a{
@@ -9,43 +18,9 @@ li, a{
   color:#000;
 }
 
-.navContainer{
-  display: flex;
-  flex-direction: column;
+body{
+  background-color: var(--backgroud-color);
 }
 
-.navBar1{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
 
-.title{
-  margin: 20px;
-}
-
-.cartIcon{
-  font-size: 30px;
-  margin: 20px;
-}
-
-.navBar2{
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.navItem{
-  list-style: none;
-}
-
-.containerProd{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  margin-top: 50px;
-}
 

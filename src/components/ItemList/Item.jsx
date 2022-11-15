@@ -9,7 +9,7 @@ function Item({title, imgurl, price, id}) {
             <div className="card-img">
                 <img src= {imgurl} alt={title} />
             </div>
-            <div>
+            <div className="card-content">
                 <h3>{title}</h3>
                 <p>${price}</p>
             </div>
