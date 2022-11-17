@@ -1,0 +1,101 @@
+.containerFavico{
+    position: absolute;
+}
+
+label {
+    width: 250px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 14px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select:none;
+    user-select: none;
+    border-radius: 10px;
+}
+
+.containerFavico input {
+    display: none;
+}      
+
+input:checked + label svg {
+    fill: #EF3175;
+    stroke: #EF3175;
+    -webkit-animation:heartButton 1s;
+        animation: heartButton 1s;
+
+}
+
+@-webkit-keyframes heartButton {
+    0% {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+    }
+
+    25% {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+    }
+
+    50% {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+    }
+
+    75% {
+            -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+    }
+
+    100% {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+    }
+}
+
+@keyframes heartButton {
+    0% {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+    }
+
+    25% {
+            -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+    }
+
+    50% {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+    }
+
+    75% {
+            -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+    }
+
+    100% {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+    }
+}
+
+input + label .action {
+    position: relative;
+    overflow: hidden;
+    display: grid;
+}
+
+input + label .action span {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}

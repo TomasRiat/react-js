@@ -1,11 +1,13 @@
 import "./item.css";
 import { Link } from "react-router-dom"
 import CardButton from "../CardButton/CardButton";
+import ButtonAddFavs from "../Click/ButtonAddFavs";
 
 function Item({title, imgurl, price, id}) {
     const urlDetail = `/detail/${id}`;
     return (
         <div className="card">
+            <ButtonAddFavs/>
             <div className="card-img">
                 <img src= {imgurl} alt={title} />
             </div>
@@ -16,6 +18,7 @@ function Item({title, imgurl, price, id}) {
             <Link to={urlDetail}>
                 <CardButton>Ver más</CardButton>
             </Link>
+            
         </div>
     )
 }
