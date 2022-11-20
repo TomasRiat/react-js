@@ -1,11 +1,10 @@
 .btn{
-    padding: 5px 15px;
+    padding: 5px 70px;
     color: white;
-    max-width: 150px;
     background-color: var(--buton-color);
     border-radius: 4px; 
     border: none;
-    margin: 20px 25px;
+    margin: 20px 30px;
     cursor: pointer;
     transition: all ease-out 120ms;
 }

@@ -11,14 +11,10 @@ function ItemDetailContainer() {
     const [product, setProduct] = useState([]);
     const { idItem } = useParams();
 
-    async function getItemsAsync(){
-            let response = await getSingleItem(idItem);
-            setProduct(response)
-    }
-    useEffect(
-        () => {
-            getItemsAsync();
-        }, []);
+    useEffect(() => {
+            getSingleItem(idItem).then((response) =>
+            setProduct(response) )
+        }, [idItem]);
 
     return <ItemDetail product={product}/>
 }

@@ -1,10 +1,16 @@
-
+import "./footer.css";
 
 function Footer() {
   return (
-    <div className="footer">
+    <footer>
       <h2>Dietetica Nunchi</h2>
-    </div>
+      <p>Seguinos en nuestras Redes Sociales</p>
+      <ul>
+        <li>Instagram</li>
+        <li>Facebook</li>
+        <li>Whatsapp</li>
+      </ul>
+    </footer>
   )
 }
 

@@ -1,11 +1,12 @@
 import "./itemCount.css"
 import React, {useState} from "react";
 
-function ItemCount(props) {
+
+function ItemCount({stock, onAddToCart}) {
   let [count, setCount] = useState(1)
 
   function handleSuma(){
-    if ( count < props.stock )
+    if ( count < stock )
       setCount(count+1)
   }
 
@@ -15,10 +16,17 @@ function ItemCount(props) {
   }
 
   return (
-    <div className="itemCount">
-        <button onClick={handleResta}>-</button>
-        <span>{count}</span>
-        <button onClick={handleSuma}>+</button>
+    <div className="detail-interactive">
+      <div className="itemCount">
+          <button onClick={handleResta}>-</button>
+          <span>{count}</span>
+          <button onClick={handleSuma}>+</button>
+      </div>
+      <div className="buttonAddCart">
+        <button onClick={()=> onAddToCart(count)}>
+            Agregar al Carrito
+        </button>
+      </div>
     </div>
   )
 }

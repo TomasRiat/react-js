@@ -1,3 +1,8 @@
+.detail-interactive{
+    display: flex;
+    flex-direction: row;
+}
+
 .itemCount{
     width: 110px;
     display: flex;
@@ -19,4 +24,16 @@
 
 .itemCount span{
     color: var(--buton-color);
+}
+
+
+.buttonAddCart button{
+    height: 28px;
+    border: 2px solid var(--nav-color);
+    background-color: var(--backgroud-color);
+    border-radius: 10px;
+    width: 200px;
+    margin-top: 29px;
+    margin-left: 20px;
+    cursor: pointer;
 }

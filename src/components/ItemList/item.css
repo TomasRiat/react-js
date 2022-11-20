@@ -15,6 +15,7 @@
     width: 180px;
     height: 180px;
     object-fit: contain;
+    border-radius: 10px;
 }
 
 .card-content{
