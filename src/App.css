@@ -22,5 +22,12 @@ body{
   background-color: var(--backgroud-color);
 }
 
+.spinnerContainer{
+  height: 65vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 

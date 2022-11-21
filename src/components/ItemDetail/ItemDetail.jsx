@@ -24,7 +24,7 @@ function ItemDetail({product}) {
             <div className="card-detail_detail">
                 <h2>{product.title}</h2>
                 <h3>${product.price}</h3>
-                <div className="card-interaction">
+                <div className="card-interaction"> 
                   {
                     addedToCart === false ? (<ItemCount onAddToCart={onAddToCart} stock= {product.stock} />) : ( <Link to="/cart"><CardButton>Ver Carrito</CardButton></Link> )
                   }

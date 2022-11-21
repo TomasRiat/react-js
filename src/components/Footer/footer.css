@@ -2,7 +2,6 @@ footer{
     height: 200px;
     background-color: var(--buton-color);
     color: var(--backgroud-color);
-    margin-bottom: 0;
     padding: 20px;
 }
 

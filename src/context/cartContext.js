@@ -34,6 +34,7 @@ export function CartContextProvider(props){
 
     function removeItemCart(removeId){
         // usar cart.filter -> filtrar todos los items con un ID diferente a "removeId"
+        
     }
 
     function clearCart(){

@@ -5,6 +5,9 @@ import ButtonAddFavs from "../Click/ButtonAddFavs";
 
 function Item({product}) {
     const urlDetail = `/detail/${product.id}`;
+
+    // se puede usar operador && para agregar cosas en algunos si y en otros no
+
     return (
         <div className="card">
             <ButtonAddFavs/>
@@ -15,6 +18,7 @@ function Item({product}) {
                 <h3>{product.title}</h3>
                 <p>${product.price}</p>
             </div>
+
             <div className="card-buttons">
                 <Link to={urlDetail}>
                     <CardButton>Ver más</CardButton>
