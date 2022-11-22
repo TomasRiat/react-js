@@ -12,8 +12,7 @@ function CartWidget() {
     return (
         <Link to="/cart" className="cartContainer">
             <FontAwesomeIcon icon= {faCartShopping} className="cartIcon"/>
-            <span>{miContext.itemsInCart()}</span>
-            
+            <span className="cartCounter">{miContext.itemsInCart()}</span>
         </Link>
     )
 }

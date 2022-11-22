@@ -31,6 +31,6 @@
     border-radius: 100%;
 }
 
-.cart__remove{
-    cursor: pointer;
+.clear-cart{
+    margin: 100px 200px;
 }

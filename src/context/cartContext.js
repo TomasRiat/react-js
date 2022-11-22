@@ -32,13 +32,17 @@ export function CartContextProvider(props){
         return total;
     }
 
-    function removeItemCart(removeId){
+    function removeItemCart(id){
         // usar cart.filter -> filtrar todos los items con un ID diferente a "removeId"
-        
+        cart.splice(
+            cart.findIndex((p) => p.id === id),
+            1
+            );
+            setCart([...cart]);
     }
 
     function clearCart(){
-        // vaciar estado
+        setCart([]);
     }
 
     function priceInCart(){

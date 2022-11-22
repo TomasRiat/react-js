@@ -21,7 +21,7 @@ function Item({product}) {
 
             <div className="card-buttons">
                 <Link to={urlDetail}>
-                    <CardButton>Ver más</CardButton>
+                    <CardButton style= {{ padding: "5px 70px" }} >Ver más</CardButton>
                 </Link>
             </div>
         </div>

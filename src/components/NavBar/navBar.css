@@ -4,14 +4,14 @@
     padding-bottom: 20px;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.50);
 }
-  
+
 .navBar1{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     
 }
-  
+
 .title{
     margin: 20px;
     
@@ -20,12 +20,12 @@
 .navBar1 h1{
     color: var(--buton-color);
 }
-  
+
 .cartIcon{
     font-size: 30px;
-    margin: 20px;
+    margin-right: 10px;
 }
-  
+
 .navBar2{
     display: flex;
     flex-direction: row;
@@ -33,8 +33,27 @@
     flex-wrap: wrap;
     justify-content: center;
 }
-  
+
 .navItem{
     list-style: none;
     color: var(--buton-color);
+}
+
+.cartContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.cartCounter{
+    background-color: var(--buton-color);
+    border-radius: 100%;
+    width: 23px;
+    height: 23px;
+    color: var(--backgroud-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

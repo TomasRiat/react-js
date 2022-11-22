@@ -6,6 +6,7 @@ return (
     <button
     onClick={props.onClick}
     className="btn"
+    style={props.style}
     >
     {props.children}
     </button>
