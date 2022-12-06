@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 import ItemList from "./ItemList";
 import "./itemList.css";
-import getItems from "../../services/mockService";
+import getItems from "../../services/firestore";
 import {useParams} from "react-router-dom";
 import LoaderItem from "../Loaders/LoaderItem";
 
