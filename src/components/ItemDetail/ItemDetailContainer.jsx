@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 import "./itemDetail.css";
-import { getSingleItem } from "../../services/mockService";
+import { getSingleItem } from "../../services/firestore";
 import ItemDetail from "./ItemDetail";
 import LoaderItem from "../Loaders/LoaderItem";
 
@@ -14,7 +14,7 @@ function ItemDetailContainer() {
 
     const { idItem } = useParams();
 
-    function getItem() {
+    async function getItem() {
         getSingleItem(idItem).then( response => {
             setProduct(response);
             setIsLoading(false);

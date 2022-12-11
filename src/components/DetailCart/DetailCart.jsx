@@ -9,12 +9,20 @@ import CardButton from "../CardButton/CardButton";
 function DetailCart() {
   const {cart, removeItemCart, clearCart, priceInCart} = useContext(cartContext)
 
+  function handleCheckout(evento){
+    const order = {
+      buyer: {},
+      items: cart,
+      total: 0,
+      date: '',
+    }
+  }
 
   return (
     <div className="cart">
       {cart.map((item) => 
       <section>
-        <article className="cart__detail--container">
+        <article key={item.id} className="cart__detail--container">
           <table className="cart__table">
             <tr className="cart__detail">
               <td className="cart__img"> <img src={item.imgurl} alt="" /></td>
@@ -29,6 +37,7 @@ function DetailCart() {
       )}
       <div className="clear-cart">
         <CardButton style= {{padding: "5px 70px"}} onClick= {() => clearCart([])} >Vaciar Carrito</CardButton>
+        <CardButton style= {{padding: "5px 70px"}} onClick={handleCheckout} >Finalizar Compra</CardButton>
       </div>
     </div>
   )

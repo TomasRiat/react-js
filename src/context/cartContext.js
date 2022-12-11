@@ -46,7 +46,9 @@ export function CartContextProvider(props){
     }
 
     function priceInCart(){
-        // costo total de compra
+        let totalPrice = 0
+        cart.forEach((product) => (totalPrice = totalPrice + (product.price*product.count)))
+        return totalPrice
     }
 
     // 3. Retornamos el Provider del context creado.
