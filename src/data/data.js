@@ -1,6 +1,6 @@
 const products = [
   {
-    id: 1,
+    indice: 1,
     title: "Pasta de Mani King",
     price: 943,
     stock: 3,
@@ -9,7 +9,7 @@ const products = [
     imgurl: "/img/1_pasta-mani.png",
   },
   {
-    id: 2,
+    indice: 2,
     title: "Almendras ",
     price: 1593,
     stock: 99,
@@ -18,7 +18,7 @@ const products = [
     imgurl: "/img/1_almendras.jpg",
   },
   {
-    id: 3,
+    indice: 3,
     title: "Almohaditas",
     price: 654,
     stock: 92,
@@ -27,7 +27,7 @@ const products = [
     imgurl: "/img/1_almohaditas.jpg",
   },
   {
-    id: 4,
+    indice: 4,
     title: "Barras de Cereal Muecas",
     price: 1555,
     stock: 1,
@@ -36,7 +36,7 @@ const products = [
     imgurl: "/img/1_barra-cereal.jpg",
   },
   {
-    id: 5,
+    indice: 5,
     title: "Galletitas Nina",
     price: 906,
     stock: 96,
@@ -45,7 +45,7 @@ const products = [
     imgurl: "/img/1_galletitas-nina.jpg",
   },
   {
-    id: 6,
+    indice: 6,
     title: "Alfajor Celienergy",
     price: 364,
     stock: 77,
@@ -54,7 +54,7 @@ const products = [
     imgurl: "/img/1_alfajor-celienergy.jpg",
   },
   {
-    id: 7,
+    indice: 7,
     title: "Aceite De Coco Golsa Sin Tacc",
     price: 980,
     stock: 78,
@@ -63,7 +63,7 @@ const products = [
     imgurl: "/img/2_aceite-coco.jpg",
   },
   {
-    id: 8,
+    indice: 8,
     title: "Aceite De Oliva BioLive Organico",
     price: 1345,
     stock: 47,
@@ -72,7 +72,7 @@ const products = [
     imgurl: "/img/2_aceite-oliva.jpg",
   },
   {
-    id: 9,
+    indice: 9,
     title: "Aceitunas Organicas Terra Sana",
     price: 381,
     stock: 25,
@@ -81,7 +81,7 @@ const products = [
     imgurl: "/img/2_aceitunas.png",
   },
   {
-    id: 10,
+    indice: 10,
     title: "Quínoa Facil Frams",
     price: 1283,
     stock: 41,
@@ -90,7 +90,7 @@ const products = [
     imgurl: "/img/2_quinoa.png",
   },
   {
-    id: 11,
+    indice: 11,
     title: "Sal Rosada del Himalaya",
     price: 702,
     stock: 53,
@@ -99,7 +99,7 @@ const products = [
     imgurl: "/img/2_sal-himalaya.jpg",
   },
   {
-    id: 12,
+    indice: 12,
     title: "Salsas de Soja Lee Kum Kee",
     price: 1850,
     stock: 11,
@@ -108,7 +108,7 @@ const products = [
     imgurl: "/img/2_salsa-soja.png",
   },
   {
-    id: 13,
+    indice: 13,
     title: "Jugo de Arandanos Sin Azucar Cabaña Mico",
     price: 989,
     stock: 57,
@@ -117,7 +117,7 @@ const products = [
     imgurl: "/img/3_jugo-arandanos.png",
   },
   {
-    id: 14,
+    indice: 14,
     title: "Jugos Naturales Estancia los Naranjos",
     price: 465,
     stock: 19,
@@ -126,7 +126,7 @@ const products = [
     imgurl: "/img/3_jugos-naturales.jpg",
   },
   {
-    id: 15,
+    indice: 15,
     title: "Leche de Almendras Pampa Vida",
     price: 1764,
     stock: 71,
@@ -135,7 +135,7 @@ const products = [
     imgurl: "/img/3_leche-almendras.jpg",
   },
   {
-    id: 16,
+    indice: 16,
     title: "Leche de Coco Cocoon",
     price: 624,
     stock: 5,
@@ -144,7 +144,7 @@ const products = [
     imgurl: "/img/3_leche-coco.png",
   },
   {
-    id: 17,
+    indice: 17,
     title: "Infusiones de Té Inti Zen",
     price: 1870,
     stock: 6,
@@ -153,7 +153,7 @@ const products = [
     imgurl: "/img/3_te.jpg",
   },
   {
-    id: 18,
+    indice: 18,
     title: "Yerba Mate Orgánica Oasis",
     price: 1583,
     stock: 28,
@@ -162,7 +162,7 @@ const products = [
     imgurl: "/img/3_yerba.jpg",
   },
   {
-    id: 19,
+    indice: 19,
     title: "Aceite de Rosa Mosqueta Botanika",
     price: 579,
     stock: 27,
@@ -171,7 +171,7 @@ const products = [
     imgurl: "/img/4_aceite-rosa-mosqueta.jpg",
   },
   {
-    id: 20,
+    indice: 20,
     title: "Cepillo De Dientes Biodegradable de Bambu Meraki",
     price: 202,
     stock: 63,
@@ -180,7 +180,7 @@ const products = [
     imgurl: "/img/4_cepillo-dientes.jpg",
   },
   {
-    id: 21,
+    indice: 21,
     title: "Gel de Aloe Vera Jual",
     price: 306,
     stock: 40,
@@ -189,7 +189,7 @@ const products = [
     imgurl: "/img/4_gel-aloeVera.jpg",
   },
   {
-    id: 22,
+    indice: 22,
     title: "Jabones Vegetales Naturales SriSri",
     price: 814,
     stock: 87,
@@ -198,7 +198,7 @@ const products = [
     imgurl: "/img/4_jabones-naturales.jpg",
   },
   {
-    id: 23,
+    indice: 23,
     title: "Serum Facial Glow Boost Veganis",
     price: 1463,
     stock: 39,
@@ -207,7 +207,7 @@ const products = [
     imgurl: "/img/4_serum.jpg",
   },
   {
-    id: 24,
+    indice: 24,
     title: "Shampoo Veganis",
     price: 1873,
     stock: 5,
@@ -216,7 +216,7 @@ const products = [
     imgurl: "/img/4_shampoo.jpg",
   },
   {
-    id: 25,
+    indice: 25,
     title: "Ajo Negro Natier",
     price: 482,
     stock: 80,
@@ -225,7 +225,7 @@ const products = [
     imgurl: "/img/5_ajo-negro.png",
   },
   {
-    id: 26,
+    indice: 26,
     title: "Clorofila Liquida",
     price: 1602,
     stock: 45,
@@ -234,7 +234,7 @@ const products = [
     imgurl: "/img/5_clorofila.jpg",
   },
   {
-    id: 27,
+    indice: 27,
     title: "Jalea Real Capsulas Natier",
     price: 988,
     stock: 92,
@@ -243,7 +243,7 @@ const products = [
     imgurl: "/img/5_jalea-real.png",
   },
   {
-    id: 28,
+    indice: 28,
     title: "Omega 3 Duo Vitamin Way",
     price: 804,
     stock: 3,
@@ -252,7 +252,7 @@ const products = [
     imgurl: "/img/5_omega3.jpg",
   },
   {
-    id: 29,
+    indice: 29,
     title: "Spirulina Orgánica HG",
     price: 1650,
     stock: 53,
@@ -261,7 +261,7 @@ const products = [
     imgurl: "/img/5_spirulina.jpg",
   },
   {
-    id: 30,
+    indice: 30,
     title: "Vitamina C Concentrada",
     price: 753,
     stock: 85,
@@ -270,7 +270,7 @@ const products = [
     imgurl: "/img/5_vitaminaC.jpg",
   },
   {
-    id: 31,
+    indice: 31,
     title: "Carbon Defumador Neutro Sagrada Madre",
     price: 1991,
     stock: 68,
@@ -279,7 +279,7 @@ const products = [
     imgurl: "/img/6_carbon-defumador.jpg",
   },
   {
-    id: 32,
+    indice: 32,
     title: "Lampara de Sal",
     price: 2500,
     stock: 27,
@@ -288,7 +288,7 @@ const products = [
     imgurl: "/img/6_lampara-sal.jpeg",
   },
   {
-    id: 33,
+    indice: 33,
     title: "Perlas Aromaticas Sagrada Madre",
     price: 1709,
     stock: 71,
@@ -297,7 +297,7 @@ const products = [
     imgurl: "/img/6_perlas-aromaticas.jpg",
   },
   {
-    id: 34,
+    indice: 34,
     title: "Sahumador Porta Sahumerio Sagrada Madre",
     price: 263,
     stock: 54,
@@ -306,7 +306,7 @@ const products = [
     imgurl: "/img/6_sahumador.jpeg",
   },
   {
-    id: 35,
+    indice: 35,
     title: "Sahumerio Natural Sagrada Madre",
     price: 870,
     stock: 74,
@@ -315,7 +315,7 @@ const products = [
     imgurl: "/img/6_sahumerios.jpg",
   },
   {
-    id: 36,
+    indice: 36,
     title: "Sahumo Sagrada Madre",
     price: 586,
     stock: 32,
@@ -324,7 +324,7 @@ const products = [
     imgurl: "/img/6_sahumo.jpg",
   },
   {
-    id: 37,
+    indice: 37,
     title: "Frutillas Congeladas",
     price: 1080,
     stock: 34,
@@ -333,7 +333,7 @@ const products = [
     imgurl: "/img/7_frutillas-congeladas.png",
   },
   {
-    id: 38,
+    indice: 38,
     title: "Hamburguesas de Legumbres Kaia",
     price: 460,
     stock: 47,
@@ -342,7 +342,7 @@ const products = [
     imgurl: "/img/7_hamburguesas-legumbres.jpg",
   },
   {
-    id: 39,
+    indice: 39,
     title: "Hamburguesas Not Burger - NotCo",
     price: 690,
     stock: 15,
@@ -351,7 +351,7 @@ const products = [
     imgurl: "/img/7_hamburguesas-notBurguer.jpg",
   },
   {
-    id: 40,
+    indice: 40,
     title: "Provoleta Vegana Felices las Vacas",
     price: 800,
     stock: 31,
@@ -360,7 +360,7 @@ const products = [
     imgurl: "/img/7_provoleta-vegana.png",
   },
   {
-    id: 41,
+    indice: 41,
     title: "Quesos Vegetales Crudda",
     price: 615,
     stock: 12,
@@ -369,7 +369,7 @@ const products = [
     imgurl: "/img/7_queso-vegetal.jpg",
   },
   {
-    id: 42,
+    indice: 42,
     title: "Yogures Bebibles Veganos y Proteícos",
     price: 986,
     stock: 48,

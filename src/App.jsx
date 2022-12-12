@@ -8,6 +8,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Footer from './components/Footer/Footer';
 import DetailCart from './components/DetailCart/DetailCart';
 import { CartContextProvider } from './context/cartContext';
+import EndShop from './components/EndShop/EndShop';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="/category/:idCategory" element={<ItemListContainer/>} />
             <Route path="/detail/:idItem" element={<ItemDetailContainer/>} />
             <Route path="/cart" element={<DetailCart/>} />
+            <Route path="/endShop/:idOrder" element={<EndShop/>} />
 
             <Route path="*" element={<p>ERROR 404: esta pagina no existe</p>} />
           </Routes>

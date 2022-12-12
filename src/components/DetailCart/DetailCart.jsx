@@ -5,24 +5,40 @@ import { cartContext } from "../../context/cartContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
 import CardButton from "../CardButton/CardButton";
+import { createOrder } from "../../services/firestore";
+import { useNavigate } from "react-router-dom";
 
 function DetailCart() {
   const {cart, removeItemCart, clearCart, priceInCart} = useContext(cartContext)
+  let navigate = useNavigate();
 
-  function handleCheckout(evento){
+  if(cart.length === 0 )
+    return(
+      <div>
+        <h1>Carrito Vacio</h1>
+      </div>
+    )
+
+  async function handleCheckout(evento){
     const order = {
-      buyer: {},
+      buyer: {
+        name: "Tomas",
+        email: "tomasriat@hotmail.com",
+        phone: "3413667784"
+      },
       items: cart,
-      total: 0,
-      date: '',
+      total: priceInCart(),
+      date: new Date(),
     }
+    const orderId = await createOrder(order)
+    navigate(`/endshop/${orderId}`)
   }
 
   return (
     <div className="cart">
       {cart.map((item) => 
-      <section>
-        <article key={item.id} className="cart__detail--container">
+      <section  key={item.id}>
+        <article className="cart__detail--container">
           <table className="cart__table">
             <tr className="cart__detail">
               <td className="cart__img"> <img src={item.imgurl} alt="" /></td>
